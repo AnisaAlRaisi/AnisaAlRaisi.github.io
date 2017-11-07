@@ -1,0 +1,37 @@
+<html>
+  
+  <head>Local Storage </head>
+ 
+  <script>
+  
+    function save() {
+   
+      var fieldValue = document.getElementById('textfield').value;
+      
+    localStorage.setItem('text' , fieldValue);
+
+    }
+    
+    function load()  {
+      
+      var storedValue =localStorage.getItem('text');
+      if(storedValue) {
+        document.getElementById('textfield').value = storedValue;
+        
+      }
+    }
+    
+  </script>
+  
+  <body onload="load()">
+   <p1>What did you eat today?</p1>
+    <input type="text" id="textfield" />
+  
+    
+    <input type="button" value="save" onclick="save ()" />
+  
+  </body>
+  
+ 
+
+</html>
