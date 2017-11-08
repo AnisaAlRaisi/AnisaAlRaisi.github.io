@@ -6,17 +6,17 @@
   
     function save() {
    
-      var fieldValue = document.getElementById('textfield').value;
+      var fieldValue = document.getElementById('textfield1').value;
       
-    localStorage.setItem('text' , fieldValue);
+    localStorage.setItem('text1' , fieldValue);
 
     }
     
     function load()  {
       
-      var storedValue =localStorage.getItem('text');
+      var storedValue =localStorage.getItem('text1');
       if(storedValue) {
-        document.getElementById('textfield').value = storedValue;
+        document.getElementById('textfield1').value = storedValue;
         
       }
     }
@@ -26,42 +26,138 @@
   <body onload="load()">
     <br>
    <p1>What did you eat today?</p1>
-    <input type="text" id="textfield" />
+    <input type="text1" id="textfield1" />
     
     <input type="button" value="save" onclick="save ()" />
   
  <br> 
    
+   <script>
+  
+    function save() {
+   
+      var fieldValue = document.getElementById('textfield2').value;
+      
+    localStorage.setItem('text2' , fieldValue2);
+
+    }
+    
+    function load()  {
+      
+      var storedValue =localStorage.getItem('text2');
+      if(storedValue) {
+        document.getElementById('textfield2').value = storedValue;
+        
+      }
+    }
+    
+  </script>
    <p1>What did you drink today?</p1>
-    <input type="text" id="textfield" />
+    <input type="text2" id="textfield2" />
     
     <input type="button" value="save" onclick="save ()" />
    
    <br>
+  <script>
   
+    function save() {
+   
+      var fieldValue = document.getElementById('textfield3').value;
+      
+    localStorage.setItem('text3' , fieldValue);
+
+    }
+    
+    function load()  {
+      
+      var storedValue =localStorage.getItem('text3');
+      if(storedValue) {
+        document.getElementById('textfield3').value = storedValue;
+        
+      }
+    }
+    
+  </script>
    <p1>Did you Workout?</p1>
-    <input type="text" id="textfield" />
+    <input type="text3" id="textfield3" />
     
     <input type="button" value="save" onclick="save ()" />
     
      <br>
+  <script>
   
+    function save() {
+   
+      var fieldValue = document.getElementById('textfield4').value;
+      
+    localStorage.setItem('text4' , fieldValue);
+
+    }
+    
+    function load()  {
+      
+      var storedValue =localStorage.getItem('text4');
+      if(storedValue) {
+        document.getElementById('textfield4').value = storedValue;
+        
+      }
+    }
+    
+  </script>
    <p1>Did you Study?</p1>
-    <input type="text" id="textfield" />
+    <input type="text4" id="textfield4" />
     
     <input type="button" value="save" onclick="save ()" />
     
      <br>
+  <script>
   
+    function save() {
+   
+      var fieldValue = document.getElementById('textfield5').value;
+      
+    localStorage.setItem('text5' , fieldValue);
+
+    }
+    
+    function load()  {
+      
+      var storedValue =localStorage.getItem('text5');
+      if(storedValue) {
+        document.getElementById('textfield5').value = storedValue;
+        
+      }
+    }
+    
+  </script>
    <p1>Were you productive?</p1>
-    <input type="text" id="textfield" />
+    <input type="text5" id="textfield5" />
     
     <input type="button" value="save" onclick="save ()" />
     
    <br>
+  <script>
   
+    function save() {
+   
+      var fieldValue = document.getElementById('textfield6').value;
+      
+    localStorage.setItem('text6' , fieldValue);
+
+    }
+    
+    function load()  {
+      
+      var storedValue =localStorage.getItem('text6');
+      if(storedValue) {
+        document.getElementById('textfield6').value = storedValue;
+        
+      }
+    }
+    
+  </script>
    <p1>How are you feeling?</p1>
-    <input type="text" id="textfield" />
+    <input type="text6" id="textfield" />
     
     <input type="button" value="save" onclick="save ()" />
     
