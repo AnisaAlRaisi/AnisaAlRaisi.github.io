@@ -1,9 +1,61 @@
 <html>
-    <body bgcolor="#fe001a">
-        <h1> Cola Currency</h1>
-        <svg height="210" width="500">
-  <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,255,255);stroke-width:2" />
+	<head>
+		<title>Guilloche generator</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="guilloche.js"></script>
+		<style>
+			body {
+				background-color: #fe001a;
+			}
+			
+		</style>
+	</head>
+	<body >
+	    
+	    
+	    <div style="background-color:#7bceeb;">
+<!--[if gte mso 9]>
+    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+    <v:fill type="frame" src="https://i.imgur.com/nGmHTtf.gif"color="#fe001a" />
+    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+        <![endif]-->
+ <table height="50%" width="50%" cellpadding="0" cellspacing="0" border="0">
+   <tr>
+     <td valign="top" align="left" background="https://i.imgur.com/nGmHTtf.gif" style="background-repeat:no-repeat; background-size:cover;"> 
+	    
+	    <div style='opacity:.2'>
   
-</svg>
-        </body>
+	    
+		<canvas id="c" width="1200px" height="1200px"></canvas>
+		<script>
+			/* global $ *//* global Guilloche */
+			$(function() {
+				var canvas = document.getElementById('c');
+				var ctx = canvas.getContext('2d');
+				ctx.canvas.width  = window.innerWidth;
+	  			ctx.canvas.height = window.innerHeight;
+				ctx.translate((ctx.canvas.width/2)+0.5, (ctx.canvas.height/2)+0.5);
+				ctx.strokeStyle='black'; 
+				ctx.lineWidth = 0.5;
+				var g = Guilloche()
+				
+				
+				g.plot(ctx);
+			})	;
+			
+		</script>
+		
+		</div>
+		
+		</td>
+   </tr>
+ </table>
+ <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</div>
+		
+		
+	</body>
 </html>
